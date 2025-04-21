@@ -4,6 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página de Vendas - SCFVI</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2072907653233031');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2072907653233031&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     html, body {
       margin: 0;
@@ -31,29 +51,30 @@
 
     #floating-button {
       position: absolute;
-      bottom: 30px;
+      bottom: 100px; /* posição mais acima */
       left: 50%;
       transform: translateX(-50%);
-      background-color: #955425;
+      background-color: #1C9889;
       color: white;
       font-size: 18px;
       padding: 14px 28px;
       border: none;
       border-radius: 10px;
-      box-shadow: 0 0 20px #955425;
+      box-shadow: 0 0 20px #1C9889;
       cursor: pointer;
       display: none;
       z-index: 9999;
     }
 
     #floating-button:hover {
-      background-color: #7a3a1f;
+      background-color: #15766b;
     }
 
     @media screen and (max-width: 768px) {
       #floating-button {
         font-size: 16px;
         padding: 12px 20px;
+        bottom: 80px;
       }
     }
   </style>
